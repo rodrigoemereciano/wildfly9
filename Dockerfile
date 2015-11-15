@@ -32,7 +32,7 @@ ADD ["https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-665999995121
 WORKDIR /opt/java/
 RUN tar -zxf $JDK_VERSION 
 
-
+#Instalando Java...
 RUN update-alternatives --install /usr/bin/javac javac /opt/java/$JDK_PASTA/bin/javac 100
 
 RUN update-alternatives --install /usr/bin/java java /opt/java/$JDK_PASTA/bin/java 100
